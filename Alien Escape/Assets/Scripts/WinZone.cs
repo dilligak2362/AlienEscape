@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class WinZone : MonoBehaviour
 {
+    public AudioSource audioPlayer; 
 
     public GameObject winText; 
 
@@ -17,5 +18,7 @@ public class WinZone : MonoBehaviour
     void OnTriggerEnter2D(Collider2D col)
     {
         winText.gameObject.SetActive(true);
+        Time.timeScale = 0;
+        audioPlayer.Play();
     }
 }
