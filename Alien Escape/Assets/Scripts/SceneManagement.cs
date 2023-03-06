@@ -25,6 +25,11 @@ public class SceneManagement : MonoBehaviour
         SceneManager.LoadScene("Level 4");
     }
 
+    public void RestartLevel5()
+    {
+        SceneManager.LoadScene("Level 5");
+    }
+
     public void MainMenu()
     {
         SceneManager.LoadScene("Main Menu");
